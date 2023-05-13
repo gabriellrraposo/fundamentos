@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora Certa?</title>
+
+    <script>
+        let atualizarHora = () => {
+            const hora = document.querySelector('span')
+            hora.textContent = new Date().toLocaleTimeString('pt-br')
+        }
+
+        setInterval(atualizarHora, 1000)
+    </script>
+</head>
+<body>
+    <strong>Hora certa:</strong>
+    <span></span>
+</body>
+</html>
