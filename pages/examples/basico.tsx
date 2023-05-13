@@ -1,8 +1,12 @@
-import Basico from "@/components/examples/basico";
+import Basico from "@/components/examples/Basico";
+import Pagina from "@/components/examples/template/Pagina";
 
 
 export default  function PaginaBasico() {
     return (
-        <Basico />
+        <Pagina>
+            <Basico />
+        </Pagina>
+        
     )
 }

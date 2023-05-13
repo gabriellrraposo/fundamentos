@@ -1,4 +1,4 @@
-import Evento from "@/components/examples/evento";
+import Evento from "@/components/examples/Evento";
 
 export default function PaginaEvento() {
     return (
