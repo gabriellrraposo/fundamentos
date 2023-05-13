@@ -1,14 +1,14 @@
-import { Icon24Hours } from "@tabler/icons-react";
+import Pagina from "@/components/examples/template/Pagina";
+import Menu from "@/components/examples/template/Menu";
 
 export default function Home() {
   return (
-    <div
-      className={`
-      flex justify-center items-center h-screen
-      bg-black text-white text-6xl`}>
-      
-      <Icon24Hours size={100} strokeWidth={1.3} />
-      <span>Fundamentos</span>
-    </div>
+    <Pagina>
+        <Menu>
+          <span>teste1</span>
+          <span>teste2</span>
+          <span>teste3</span>
+        </Menu>
+    </Pagina>
   );
 }
