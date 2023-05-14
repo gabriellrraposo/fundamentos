@@ -2,7 +2,7 @@ import Pagina from "@/components/template/Pagina";
 import Menu from "@/components/template/Menu";
 import MenuItem from "@/components/template/MenuItem";
 import Linha from "@/components/layout/Linha";
-import { IconSourceCode } from "@tabler/icons-react";
+import { IconArrowMoveDown, IconArrowMoveUp, IconSourceCode } from "@tabler/icons-react";
 import { IconClock } from "@tabler/icons-react";
 import { IconComponents } from "@tabler/icons-react";
 
@@ -47,6 +47,20 @@ export default function Home() {
             className="bg-gradient-to-r from-cyan-500 to-red-500"
           >
             Eventos Simples
+          </MenuItem>
+          <MenuItem
+            icone={<IconArrowMoveDown size={20} />}
+            url="examples/direta"
+            className="bg-gradient-to-r from-cyan-500 to-red-500"
+          >
+            Comunicação Direta
+          </MenuItem>
+          <MenuItem
+            icone={<IconArrowMoveUp size={20} />}
+            url="examples/indireta"
+            className="bg-gradient-to-r from-cyan-500 to-red-500"
+          >
+            Comunicação Indireta
           </MenuItem>
         </Linha>
       </Menu>
